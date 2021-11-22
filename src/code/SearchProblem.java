@@ -13,7 +13,7 @@ public abstract class SearchProblem {
 	Function<SearchTreeNode, Integer> pathCostFunction;
 
 	public SearchTreeNode generalSearch(SearchProblem problem, Function<Queue<SearchTreeNode>, Queue<SearchTreeNode>> qingFunction) {
-		SearchTreeNode root = new SearchTreeNode("", null, null, 0, 0);
+		SearchTreeNode root = new SearchTreeNode(null, null, null, 0, 0);
 		
 		Queue<SearchTreeNode> nodes = new LinkedList<SearchTreeNode>();
 		nodes.add(root);

@@ -2,13 +2,13 @@ package code;
 
 public class SearchTreeNode {
 	
-	private String state;
+	private State state;
 	private SearchTreeNode parent;
 	private Operator generator;
 	private int depth;
 	private int pathCost;
 	
-	public SearchTreeNode(String state, SearchTreeNode parent, Operator generator, int depth, int pathCost) {
+	public SearchTreeNode(State state, SearchTreeNode parent, Operator generator, int depth, int pathCost) {
 		this.state = state;
 		this.parent = parent;
 		this.generator = generator;
@@ -32,7 +32,7 @@ public class SearchTreeNode {
 		return pathCost;
 	}
 
-	public String getState() {
+	public State getState() {
 		return state;
 	}
 }
